@@ -361,10 +361,9 @@ nav.navbar a.navbar-brand {
   align-items: center;
 }
 
-/* Opcional: Añade un z-index para controlar el apilamiento de elementos si es necesario */
 .card-bg .text {
-  position: relative; /* Asegura que el texto se posicione correctamente */
-  z-index: 1; /* Asegura que el texto esté en la parte superior de la caja */
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -377,7 +376,7 @@ nav.navbar a.navbar-brand {
   }
 
   .banner h1 {
-    font-size: calc(40px + 2vw); /* Tamaño de fuente más grande para dispositivos medianos */
+    font-size: calc(40px + 2vw);
   }
 
   .banner {
@@ -387,7 +386,7 @@ nav.navbar a.navbar-brand {
 
 @media (min-width: 1200px) {
   .banner h1 {
-    font-size: 60px; /* Tamaño de fuente más grande para dispositivos grandes */
+    font-size: 60px;
   }
 
   .banner {
@@ -395,3 +394,11 @@ nav.navbar a.navbar-brand {
   }
 }
 
+/* ----------- product -------------*/
+.black-title {
+  color: #000;
+}
+
+.gray-paragraph {
+  color: #888;
+}
