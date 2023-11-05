@@ -63,16 +63,21 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h1 className="text-center">
-                    🥵 <br></br>LA MEJOR EXPERIENCIA
-                  </h1>
-                  <p className="text-center">
-                    Todos los productos estan echos de la mejor calidad.
-                  </p>
-                  <div className="text-center ">
-                    <Button variant="danger" className="btn-rectangular">
-                      Descubre nuestra colección
-                    </Button>
+                  <div className="box">
+                    <div className="card-bg">
+                    <h1 className="text-center ">🥵</h1>
+                      <h1 className="text-center ">
+                         LA MEJOR<br></br>EXPERIENCIA
+                      </h1>
+                      <p className="text-center">
+                        Todos los productos estan echos de la mejor calidad.
+                      </p>
+                      <div className="text-center ">
+                        <Button variant="danger" className="btn-rectangular">
+                          Descubre nuestra colección
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
