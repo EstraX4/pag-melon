@@ -15,7 +15,6 @@
   font-weight: 400;
 }
 
-
 /************ Default Css ************/
 * {
   margin: 0;
@@ -366,8 +365,6 @@ nav.navbar a.navbar-brand {
   z-index: 1;
 }
 
-
-
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
@@ -385,8 +382,7 @@ nav.navbar a.navbar-brand {
 
   .content.card {
     margin: 0 0%;
-}
-
+  }
 }
 
 @media (min-width: 1200px) {
@@ -400,7 +396,7 @@ nav.navbar a.navbar-brand {
 
   .content.card {
     margin: 0 0%;
-}
+  }
 }
 
 /* ----------- product -------------*/
@@ -431,7 +427,6 @@ nav.navbar a.navbar-brand {
 .product-card h2 {
   font-size: 24px;
   padding: 11px 0 0 18px;
-
 }
 
 .product-card p {
@@ -459,16 +454,92 @@ nav.navbar a.navbar-brand {
 }
 
 @media (min-width: 768px) {
-
   .content.card {
     margin: 0 3%;
-}
-
+  }
 }
 
 @media (min-width: 1200px) {
-
   .content.card {
     margin: 0 8%;
+  }
 }
+
+/* ----------- inform ------------ */
+.inform-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  align-content: space-around;
+  border: none;
+  justify-content: space-around;
+  padding: 91px 0;
+  margin: 0;
+  background: #F7F8FA;
+}
+
+.inform-content .benefits-section {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.benefits-section .inform-image {
+  width: 216px;
+}
+
+.benefits-section .text-container {
+  flex: 1;
+  padding: 20px;
+  color: #000;
+}
+
+.text-container .feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.feature .feature-text {
+  flex: 1;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.feature .check-icon {
+  max-width: 20px; /* Ajusta el tamaño del icono según tus necesidades */
+}
+
+.text-container .subline {
+  margin-top: 20px;
+}
+
+.text-container .title {
+  margin-top: 10px;
+}
+
+.title {
+}
+
+.read-more-button {
+  display: block;
+  margin-top: 20px;
+}
+
+.red-paragraph {
+  color: #dc3545;
+}
+
+@media (min-width: 768px) {
+  .benefits-section .inform-image {
+    width: 304px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefits-section .inform-image {
+    width: 558px;
+  }
 }
