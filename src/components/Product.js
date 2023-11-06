@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Container } from "react-bootstrap";
 import { ProductCard } from "./ProductCard";
+import product1 from "../assets/img/product1.png"
 
 export const Product = () => {
+
+  const formattedPrice = (price) => {
+    return price.toLocaleString("es-CO", { style: "currency", currency: "COP", minimumFractionDigits: 0 });
+  };
+
   const [productData, setProductData] = useState({
-    image: "",
+    image: product1,
     productName: "Producto 1",
-    price: 20.99,
+    price: 20000 ,
   });
 
   //   const handleDataChange = () => {
@@ -21,17 +27,52 @@ export const Product = () => {
   return (
     <Container fluid>
       <div>
-        <div className="text-center">
+        <div className="text-center contenedor-tx-p">
           <h1 className="black-title">Productos</h1>
           <p className="gray-paragraph">
             Pídelo para ti o para tus seres queridos
           </p>
         </div>
-        <div>
+        <div className='content card'>
           <ProductCard
             image={productData.image}
             productName={productData.productName}
-            price={productData.price}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
+          />
+          <ProductCard
+            image={productData.image}
+            productName={productData.productName}
+            price={formattedPrice(productData.price)}
           />
           {/* <button onClick={handleDataChange}>Cambiar Datos</button> */}
         </div>

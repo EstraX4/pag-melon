@@ -2,10 +2,10 @@ import React, { useState } from "react"; // AÃ±ade { useState } en la importaciÃ
 
 export const ProductCard = ({ image, productName, price }) => {
   return (
-    <div className="card">
-      <img src={image} alt={productName} />
+    <div className="product-card">
+      <img className="card-default" src={image} alt={productName} />
       <h2>{productName}</h2>
-      <p>Precio: ${price}</p>
+      <p>{price}</p>
     </div>
   );
 }

@@ -382,6 +382,11 @@ nav.navbar a.navbar-brand {
   .banner {
     padding: 316px 0 237px 0;
   }
+
+  .content.card {
+    margin: 0 0%;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -392,6 +397,10 @@ nav.navbar a.navbar-brand {
   .banner {
     padding: 360px 0 237px 0;
   }
+
+  .content.card {
+    margin: 0 0%;
+}
 }
 
 /* ----------- product -------------*/
@@ -401,4 +410,65 @@ nav.navbar a.navbar-brand {
 
 .gray-paragraph {
   color: #888;
+}
+
+.product-card {
+  color: #000;
+  height: 242px;
+  position: relative;
+  width: 310px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 13px 26px 13px;
+}
+
+.product-card .card-default {
+  height: 134px;
+  width: 100%;
+}
+
+.product-card h2 {
+  font-size: 24px;
+  padding: 11px 0 0 18px;
+
+}
+
+.product-card p {
+  font-size: 27px;
+  display: flex;
+  font-weight: 500;
+  color: #dc3545;
+  justify-content: flex-end;
+  padding: 0 18px 0 0;
+}
+
+.content.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  align-content: space-around;
+  border: none;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.contenedor-tx-p {
+  margin: 52px 0 0 0;
+}
+
+@media (min-width: 768px) {
+
+  .content.card {
+    margin: 0 3%;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+  .content.card {
+    margin: 0 8%;
+}
 }
