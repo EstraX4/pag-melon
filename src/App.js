@@ -6,6 +6,7 @@ import { Banner } from "./components/Banner";
 import { ProductCard } from "./components/ProductCard";
 import { Product } from './components/Product';
 import { Inform } from "./components/Inform";
+import { Testimonial } from './components/Testimonial';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Product />
       <Inform />
+      <Testimonial />
     </div>
     );
   }

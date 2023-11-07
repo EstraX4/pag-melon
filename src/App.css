@@ -445,8 +445,9 @@ nav.navbar a.navbar-brand {
   padding: 20px;
   align-content: space-around;
   border: none;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
+  background: none;
 }
 
 .contenedor-tx-p {
@@ -541,5 +542,86 @@ nav.navbar a.navbar-brand {
 @media (min-width: 1200px) {
   .benefits-section .inform-image {
     width: 558px;
+  }
+}
+
+
+/* ----------- Testimonial --------------- */
+.content-testimonial-xl {
+  padding: 74px 0;
+  background: rgba(170, 89, 84, 0.10);
+}
+
+.content-testimonial {
+  width: 300px;
+  margin: 17px;
+}
+
+.content-testimonial .body {
+
+}
+
+.row-body {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.col1-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.name-star {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar {
+  width: 122px;
+}
+
+.name-testimonial {
+  color: #7C8087;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Abel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-testimonial {
+  color: #1D293F;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 130.909% */
+}
+
+@media (min-width: 768px) {
+  .content-testimonial {
+    margin: 10px 15px;
+}
+
+.content-testimonial-xl {
+  padding: 74px;
+}
+}
+
+@media (min-width: 1200px) {
+  .content-testimonial {
+    margin: 10px 15px;
+  }
+
+  .content-testimonial-xl {
+    padding: 74px;
   }
 }
