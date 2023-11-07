@@ -7,6 +7,7 @@ import { ProductCard } from "./components/ProductCard";
 import { Product } from './components/Product';
 import { Inform } from "./components/Inform";
 import { Testimonial } from './components/Testimonial';
+import { Popular } from "./components/Popular"
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
       <Product />
       <Inform />
       <Testimonial />
+      <Popular />
     </div>
     );
   }
