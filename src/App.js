@@ -9,6 +9,10 @@ import { Inform } from "./components/Inform";
 import { Testimonial } from './components/Testimonial';
 import { Popular } from "./components/Popular"
 import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import { Carrito } from './pages/Carrito';
+import { BuyShop } from './pages/BuyShop.js';
 
 function App() {
     return (
