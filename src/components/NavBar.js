@@ -6,6 +6,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "../Link.jsx";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -40,11 +41,13 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav >
+            <Nav>
               <Nav.Link
                 href="#descubre"
                 className={
-                  activeLink === "descubre" ? "active navbar-link" : "navbar-link"
+                  activeLink === "descubre"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("descubre")}
               >
@@ -53,7 +56,9 @@ export const NavBar = () => {
               <Nav.Link
                 href="#sobreNosotros"
                 className={
-                  activeLink === "sobreNosotros" ? "active navbar-link" : "navbar-link"
+                  activeLink === "sobreNosotros"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("sobreNosotros")}
               >
@@ -73,15 +78,12 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a
-                  href="https://www.linkedin.com/in/juan-david-estrada-carvajal-691732251/"
-                  target="_BLANK"
-                >
+                <Link to="/login">
                   <img src={navIcon1} alt="" />
-                </a>
-                <a href="https://github.com/EstraX4" target="_BLANK">
+                </Link>
+                <Link to="/carrito">
                   <img src={navIcon2} alt="" />
-                </a>
+                </Link>
               </div>
             </span>
           </Navbar.Collapse>

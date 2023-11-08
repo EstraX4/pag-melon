@@ -1,13 +1,23 @@
 import React from "react";
 import { Link } from '../Link.jsx'
+import { NavBar } from "../components/NavBar.js";
+import { Banner } from "../components/Banner";
+import { Product } from '../components/Product';
+import { Inform } from "../components/Inform";
+import { Testimonial } from '../components/Testimonial';
+import { Popular } from "../components/Popular"
+import { Footer } from '../components/Footer';
 
 export default function Home () {
   return (
     <>
-      <Link to='/login'>Login</Link>
-      <Link to='/'>Home</Link>
-      <Link to='/carrito'>Carrito</Link>
-      <Link to='/buyshop'>buyshop</Link>
+      <NavBar />
+      <Banner />
+      <Product />
+      <Inform />
+      <Testimonial />
+      <Popular />
+      <Footer />
     </>
   );
 };
