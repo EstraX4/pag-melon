@@ -1,22 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { ProductCard } from "./components/ProductCard";
-import { Product } from './components/Product';
-import { Inform } from "./components/Inform";
-import { Testimonial } from './components/Testimonial';
-import { Popular } from "./components/Popular"
-import { Footer } from './components/Footer';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Carrito  from './pages/Carrito';
 import BuyShop from './pages/BuyShop.jsx';
+import Register from './pages/Register';
 import { useEffect, useState } from 'react';
-import {EVENTS} from './consts.js'
-
-
+import {EVENTS} from './consts.js';
 
 function App() {
 const [currentPath, setCurrentPath] = useState(window.location.pathname)
@@ -41,6 +31,7 @@ return () => {
       {currentPath == '/login' && <Login />}
       {currentPath == '/carrito' && <Carrito />}
       {currentPath == '/buyshop' && <BuyShop />}
+      {currentPath == '/register' && <Register />}
     </div>
     );
   }
